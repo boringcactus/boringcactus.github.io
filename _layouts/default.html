@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | boringcactus</title>
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<header>
+{% if page.url != "/" %}
+<p>(brought to you by <a href="/">boringcactus</a>)</p>
+{% endif %}
+</header>
+<main>
+{{ content }}
+</main>
+</body>
+</html>
