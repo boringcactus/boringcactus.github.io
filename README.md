@@ -1,2 +1,2 @@
 # boringcactus.github.io
-http://boringcact.us
+http://boringcactus.com
