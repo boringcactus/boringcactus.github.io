@@ -135,7 +135,7 @@ pass
 The first issue with this approach is that Discord (at time of writing, at least) sets a total of 2.25 pixels worth of horizontal margin between emoji, so your reconstituted image will have weird stripes.
 It might be feasible to adjust for these in the offsets so that the spacing isn't funky, but honestly that seems like a lot of work.
 
-The second, and more interesting, issue is that Discord has a 50 emoji limit on each server (at least for non-Nitro plebeians; I don't know if that changes if the server owner upgrades).
+The second, and more interesting, issue is that Discord has a 50 emoji limit on each server.
 Slicing a 512x512 image into 32x32 tiles for a full size replica would generate 256 tiles, which might work if you had Discord Nitro and six different dummy servers, but nah.
 Slicing into 64x64 tiles that'll be rendered at half size only makes 64 tiles, which works out nicely numerically but is still more than can fit on one server.
 Unless we're clever.
