@@ -4,6 +4,9 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% if page.description != nil %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@boring_cactus" />
+    <meta name="twitter:title" content="{{ page.title }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     {% if page.url == "/" %}
