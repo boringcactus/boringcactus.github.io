@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }} | boringcactus</title>
-<link rel="stylesheet" href="/site.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{% if page.description != nil %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip }}{% endif %}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    {% if page.url == "/" %}
+    <meta property="og:type" content="website" />
+    <title>{{ page.title }}</title>
+    {% else %}
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <title>{{ page.title }} | boringcactus</title>
+    {% endif %}
+    <link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <header>
-{% if page.url != "/" %}
-<p>(brought to you by <a href="/">boringcactus</a>)</p>
-{% endif %}
+    {% if page.url != "/" %}
+    <p>(brought to you by <a href="/">boringcactus</a>)</p>
+    {% endif %}
 </header>
 <main>
-{{ content }}
+    <h1>{{ page.title }}</h1>
+    {{ content }}
 </main>
 </body>
 </html>

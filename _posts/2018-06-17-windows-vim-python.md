@@ -3,8 +3,6 @@ layout: default
 title: "Windows, Vim, and Python: An Unholy Trinity of Pain"
 ---
 
-# {{ page.title }}
-
 Last summer I figured I'd learn Vim. That did not go well.
 
 I started by stealing somebody's `.vimrc`, as is natural.

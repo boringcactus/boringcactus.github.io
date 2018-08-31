@@ -1,9 +1,8 @@
 ---
 layout: default
 title: "Some Thoughts About Work"
+description: "I think there are three things that can make work rewarding: working with cool people, working on cool things, and working in cool ways."
 ---
-
-# {{ page.title }}
 
 I think there are three things that can make work rewarding:
 1. Working with cool people

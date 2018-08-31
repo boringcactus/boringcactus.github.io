@@ -3,8 +3,6 @@ layout: default
 title: "Slicing and Dicing Images with GIMP and Python"
 ---
 
-# {{ page.title }}
-
 Let's say you have one big image (say, a Telegram sticker) and you need to dice it into a bunch of smaller images (say, Discord emoji).
 GIMP can let you do that manually, but frankly so can simpler tools.
 GIMP also has powerful scripting support with Python (and also Scheme, but miss me with that) that can let us do that automatically.
