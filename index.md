@@ -1,10 +1,10 @@
 ---
 layout: default
 title: boringcactus (Melody Horn)
-description: i'm a programmer and a trans woman.
+description: immortal programming goddess
 ---
 
-i'm a programmer and a trans woman.
+i am an immortal programming goddess and a trans woman.
 i've been programming for over a decade, and in that time i've worked on [a wide variety of projects]({% link projects.md %}).
 
 i mostly exist on [twitter](https://twitter.com/boring_cactus).
