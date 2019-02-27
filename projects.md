@@ -23,6 +23,14 @@ permalink: /projects/
     * [for moving files around with a decent UI](https://github.com/mathphreak/ReliefValve)
     * [for diffing output of two programs](https://github.com/mathphreak/verbatim)
   * Developed a [Chrome extension](https://github.com/mathphreak/VCRI) making improvements to an existing site
+* Rust
+  * [Wrote a text editor inspired by Nano](https://github.com/mathphreak/mfte)
+  * [Made a Web app](https://github.com/mathphreak/cs-eco-dash) that consumed and processed data given in a poorly specified format
+  * [Contributed to the standard library](https://github.com/rust-lang/rust/pull/34694)
+* Python
+  * Wrote a [wxPython GUI](https://github.com/boringcactus/vidslice) for video manipulation using ffmpeg and youtube-dl
+  * Wrote an [image processing](https://github.com/mathphreak/hexcells_hints) utility
+  * Contributed to [a GroupMe chat bot](https://github.com/Boijangle/GroupMe-Message-Bot)
 * Java
   * Developed a Spring back-end for a React front-end as part of a group project
   * Developed desktop programs in Swing
@@ -35,9 +43,6 @@ permalink: /projects/
     * for a client [1](https://github.com/mathphreak/StaffDrops) [2](https://github.com/mathphreak/CompetentDeathMessages)
     * in collaboration with other developers [1](https://github.com/mathphreak/Fireworks) [2](https://github.com/mathphreak/RepublicaEternityEventIII)
     * for my own needs or to test what was possible [1](https://github.com/mathphreak/SpawnAndBack) [2](https://github.com/mathphreak/Trollcraft) 
-* Python
-  * Wrote an [image processing](https://github.com/mathphreak/hexcells_hints) utility
-  * Contributed to [a GroupMe chat bot](https://github.com/Boijangle/GroupMe-Message-Bot)
 * C++
   * Wrote an XPM decoder and a basic GUI layout library targeting a single-pixel-based graphics library
 * Open Source Contribution
@@ -56,10 +61,6 @@ permalink: /projects/
     * [Docker-based code runner](https://github.com/mathphreak/E-800) (with Rails)
     * [Gmail API client](https://github.com/mathphreak/cull21) (with Sinatra)
   * Developed a [productivity daemon](https://github.com/mathphreak/prodenfd)
-* Rust
-  * [Wrote a text editor inspired by Nano](https://github.com/mathphreak/mfte)
-  * [Made a Web app](https://github.com/mathphreak/cs-eco-dash) that consumed and processed data given in a poorly specified format
-  * [Contributed to the standard library](https://github.com/rust-lang/rust/pull/34694)
 * Go
   * Wrote a [Web-based dashboard](https://github.com/mathphreak/AltcoinNetWorth) and [WebSocket chat](https://github.com/mathphreak/webchat-go)
   * Wrote [a proxy server and API client](https://github.com/mathphreak/statdns-socks5)
