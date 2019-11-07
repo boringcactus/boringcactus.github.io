@@ -26,7 +26,7 @@ permalink: /projects/
 * Rust
   * [Wrote a text editor inspired by Nano](https://github.com/mathphreak/mfte)
   * [Made a Web app](https://github.com/mathphreak/cs-eco-dash) that consumed and processed data given in a poorly specified format
-  * [Contributed to the standard library](https://github.com/rust-lang/rust/pull/34694)
+  * Contributed to [the standard library](https://github.com/rust-lang/rust/pull/34694) and [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen/pull/1843)
 * Python
   * Wrote a [wxPython GUI](https://github.com/boringcactus/vidslice) for video manipulation using ffmpeg and youtube-dl
   * Wrote an [image processing](https://github.com/mathphreak/hexcells_hints) utility
