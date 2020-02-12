@@ -7,8 +7,12 @@ description: immortal programming goddess
 i am an immortal programming goddess and a trans woman.
 i've been programming for over a decade, and in that time i've worked on [a wide variety of projects]({% link projects.md %}).
 
-i mostly exist on [twitter](https://twitter.com/boring_cactus).
-if you like the fact that i exist, you can pay me to keep doing that on [patreon](https://www.patreon.com/boringcactus).
+i exist in a lot of places:
+- see me retweet nonsense you don't care about on [twitter](https://twitter.com/boring_cactus)
+- give me money to continue to exist on [patreon](https://www.patreon.com/boringcactus)
+- watch me occasionally stream things on [twitch](https://www.twitch.tv/boringcactus)
+- watch various kinds of permanent video content on [youtube](https://www.youtube.com/channel/UCw0N-UmLylMSnCtHZ7vagBw)
+
 every once in a very great while i write things here:
 
 {% for post in site.posts %}
