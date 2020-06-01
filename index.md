@@ -13,6 +13,7 @@ i exist in a lot of places:
 - watch me occasionally stream things on [twitch](https://www.twitch.tv/boringcactus)
 - watch various kinds of permanent video content on [youtube](https://www.youtube.com/channel/UCw0N-UmLylMSnCtHZ7vagBw)
 - give me money once on [ko-fi](https://ko-fi.com/boringcactus) or on an ongoing basis on [patreon](https://www.patreon.com/boringcactus)
+- if you must, email me at `melody@<this domain>`
 
 every once in a very great while i write things here:
 
