@@ -186,9 +186,9 @@ server yourself or something, but that takes effort to configure. honestly all
 of those kinda suck but those are your options as far as i know.
 
 *update 2020-07-31*: you can also let your friendly neighborhood succulent run
-an icecast server for you. if you've got an icecast server, you'll need to
-pay for (or otherwise obtain) [VB-CABLE A+B][], set up VB-CABLE A, and grab
-[butt (broadcast using this tool)][butt].
+an icecast server for you; reach out to me if you need something like this. if
+you've got an icecast server, you'll need to pay for (or otherwise obtain)
+[VB-CABLE A+B][], set up VB-CABLE A, and grab [butt (broadcast using this tool)][butt].
 
 you'll need to set DSD+ to output to "CABLE-A Input" like how you set it to
 input from "CABLE Output" - Cable A is the fourth output in DSD+, so my run.bat
