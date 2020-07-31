@@ -50,7 +50,12 @@ the bottom axis of the top panel to change the view. once you've found that
 constant signal, click on it to get the approximate frequency, go back to your
 frequency table and the closest thing to that will be the exact frequency.
 it should sound like a series of weird beeps instead of static. remember that
-frequency, it'll be important later. you don't need SDRSharp anymore.
+frequency, it'll be important later.
+
+*update 2020-07-31*: that control channel can change between the frequencies
+listed on RadioReference. if things randomly quit working, come back to this
+step, and see if the control channel has moved. i'll mark down below the
+places that need changing accordingly.
 
 [qsg]: https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/
 [RadioReference]: https://www.radioreference.com/apps/db/
@@ -104,7 +109,12 @@ to look kinda like this:
 
 the important things are the Role being Signal, the Park frequency being the
 control channel we found earlier (mine is 851.7625), and the Mute box being
-checked. the second VCO should look kinda like this:
+checked.
+
+*update 2020-07-31*: if the control channel changes, this Park frequency is one
+of the two things you'll need to update.
+
+the second VCO should look kinda like this:
 
 ![the RTL-SDR VCO 2 settings](/assets/2020-06-26-police-scanner-setup-4.png)
 
@@ -119,7 +129,13 @@ tab should look something like this:
 
 but the Frequency column will all be zeroes except for the control frequency we
 found earlier. you'll need to copy over the rest of the frequencies manually
-from the RadioReference site. press the stop button and the play button again,
+from the RadioReference site.
+
+*update 2020-07-31*: if the control channel changes, you'll need to uncheck the
+Control box on the old control channel, and check the Control box on the new
+control channel.
+
+press the stop button and the play button again,
 and everything should in theory be working. ideally, the Call History tab will
 be crowded and updating pretty frequently, and unitrunker will be passing
 things along to dsd+ which will give us the audio we want. technically, this is
@@ -168,3 +184,26 @@ hosting police scanner livestreams, but they have to manually approve your
 broadcast, which is annoying for short term activity. you could run an icecast
 server yourself or something, but that takes effort to configure. honestly all
 of those kinda suck but those are your options as far as i know.
+
+*update 2020-07-31*: you can also let your friendly neighborhood succulent run
+an icecast server for you. if you've got an icecast server, you'll need to
+pay for (or otherwise obtain) [VB-CABLE A+B][], set up VB-CABLE A, and grab
+[butt (broadcast using this tool)][butt].
+
+you'll need to set DSD+ to output to "CABLE-A Input" like how you set it to
+input from "CABLE Output" - Cable A is the fourth output in DSD+, so my run.bat
+now looks like this:
+
+```
+DSDPlus.exe -i3M -o4
+```
+
+run butt, pull up the settings, and under the Audio tab set the Input Device
+to "CABLE-A Output". (for bonus points, set the Streaming Codec to AAC+.) under
+the Main tab, Add a new Server and put in whatever info your icecast server
+admin told you to use. now restart your DSD+ and hit butt's play button to
+start streaming, and you should be running a livestream of your police scanner
+that is accessible over the internet.
+
+[VB-CABLE A+B]: https://www.vb-audio.com/Cable/index.htm#DownloadCable
+[butt]: https://danielnoethen.de/butt/
