@@ -35,6 +35,11 @@ a {
 a:hover {
     border-bottom-style: dashed;
 }
+blockquote {
+    margin-left: 1em;
+    border-left: 2px solid #444444;
+    padding-left: 1em;
+}
 
 /* https://github.com/richleland/pygments-css/blob/master/friendly.css */
 .highlight .hll { background-color: #ffffcc }
