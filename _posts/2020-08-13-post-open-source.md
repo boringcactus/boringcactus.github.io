@@ -223,7 +223,7 @@ now it is unambiguous in its intent, and also, it says fuck in the title.
 as such, it is the only good software license.
 
 on a more sincere note, some licenses are trying to solve the problem of corporate exploitation by bringing back into fashion the idea of public-private licenses, where the default license is principled and corporations can simply pay for an exception and be covered by a different license instead.
-the most interesting of these projects, at least as of August 2020, is [license zero](https://licensezero.com/), which offers two different public licenses, one standard private license template, and infrastructure for automatically selling exceptions.
+the most interesting of these projects, at least as of August 2020, is [license zero](https://licensezero.com/), run by actual lawyer Kyle E. Mitchell, which offers two different public licenses, one standard private license template, and infrastructure for automatically selling exceptions.
 their Parity license is a share-alike license that allows any use that is also published under an open license.
 their Prosperity license allows any use as long as it is not commercial in nature; as such, it technically doesn't satisfy the Open Source Definition and is thus in a very concrete sense a post-open source license.
 their Patreon license, which isn't linked on their homepage at all, grants an automatic license exception for certain financial supporters.
@@ -240,6 +240,8 @@ a license is a tool of the law, but the law is not actually very good at delinea
 as such, the approach Villa describes is to tell the law to mind its own damn business and use a maximally permissive license, and then use social norms to delineate what behavior you do and do not find acceptable.
 norms are tough to start from scratch, but sociologically they can fill a similar role in principle to laws while maintaining flexibility.
 i'm not quite sure what a normative approach to post-open source software would look like - i'm not aware of anyone attempting to implement it, and i'm not sure i'm ready to be the first - but most likely it'd combine the WTFPL (or, more plausibly, zero-clause BSD) with an ecosystem of standard sets of norms similar to the current varieties in codes of conduct.
+
+*update 2020-08-15*: actual lawyer Kyle E. Mitchell proposed an implementation of this approach in early 2019 and i think everyone should go read [that proposal](https://writing.kemitchell.com/2019/03/15/Ethical-Subcommons.html) right now and then come back to this blog post.
 
 and since i've been quoting him the whole time, i should probably also give a shout out to actual lawyer Luis Villa's current project, [Tidelift](https://tidelift.com/), which is trying to address open source funding at both ends.
 for corporate clients, (it looks like) tidelift is selling known-good, actively maintained, secure dependency subscriptions, and for open source maintainers, they're (i think) offering not just a proportional cut of the subscription revenue but also resources for keeping projects good, maintained, and secure.
