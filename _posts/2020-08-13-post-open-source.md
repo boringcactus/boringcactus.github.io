@@ -215,12 +215,14 @@ i actually had a [brief twitter exchange](https://twitter.com/boring_cactus/stat
 it does at least manage to solve the problems with the hippocratic license, though: the definition of evil is left completely implicit anyway, and the mechanism for enforcement is just copyright law like with any old license.
 now, since the vagueness is left implicit, there's room to argue that the clause is unenforceable.
 nobody has tested it, but that's a loophole waiting to be exploited, and also it's not as fun as the WTFPL.
-as such, right before i started writing this blog post i wrote the [fuck around and find out license v0.1](https://paste.sr.ht/~boringcactus/ed023ccf9d7a5559612d6e60f0474d6c3375349d) (or FAFOL for short), which replaces the json license's ethics disclaimer with something more clear:
+as such, right before i started writing this blog post i wrote the [fuck around and find out license v0.1](https://git.sr.ht/~boringcactus/fafol/tree/master/LICENSE-v0.1.md) (or FAFOL for short), which replaces the json license's ethics disclaimer with something more clear:
 
 > the software shall be used for Good, not Evil. the original author of the software retains the sole and exclusive right to determine which uses are Good and which uses are Evil.
 
 now it is unambiguous in its intent, and also, it says fuck in the title.
 as such, it is the only good software license.
+
+*update 2020-08-17*: i have set up [broader infrastructure around the Fuck Around and Find Out License](https://git.sr.ht/~boringcactus/fafol/tree/master/README.md), if you're interested.
 
 on a more sincere note, some licenses are trying to solve the problem of corporate exploitation by bringing back into fashion the idea of public-private licenses, where the default license is principled and corporations can simply pay for an exception and be covered by a different license instead.
 the most interesting of these projects, at least as of August 2020, is [license zero](https://licensezero.com/), run by actual lawyer Kyle E. Mitchell, which offers two different public licenses, one standard private license template, and infrastructure for automatically selling exceptions.
