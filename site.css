@@ -22,6 +22,7 @@ div.highlighter-rouge {
     background: white;
     padding: 1rem;
     line-height: 1;
+    overflow-x: auto;
 }
 div.highlighter-rouge pre {
     padding: 0;

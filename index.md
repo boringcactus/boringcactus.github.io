@@ -6,7 +6,7 @@ description: immortal programming goddess
 
 i am an immortal programming goddess and a trans ≈woman.
 i've been programming for over a decade, and in that time i've worked on [a wide variety of projects]({% link projects.md %}).
-my pronouns, in descending order of preference, are [ze/hir, it/its, and she/her](https://pronoun.is/ze/hir?or=it&or=she), but in non-queer contexts i stick to she/her.
+my pronouns, in descending order of preference, are [ze/hir, it/its, and she/her](https://pronoun.is/ze/hir?or=it&or=she).
 
 i exist in a lot of places:
 - see me retweet nonsense you don't care about on [twitter](https://twitter.com/boring_cactus)
