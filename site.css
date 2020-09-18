@@ -15,6 +15,9 @@ body {
 code {
     background: white;
 }
+pre {
+    line-height: 1.25;
+}
 .highlight code {
     background: unset;
 }
