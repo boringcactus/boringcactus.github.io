@@ -3,7 +3,7 @@ title: "Crowbar: Defining a good C replacement"
 ---
 
 I like Rust a lot.
-That said, the always-opinionated, often-correct Drew DeVault raises some good points in his blog post [Rust is not a good C replacement](https://drewdevault.com/2019/03/25/Rust-is-not-a-good-C-replacement.html).
+That said, the always-opinionated, ~~often-correct~~ [occasionally-correct](https://cmpwn.com/@sir/104946211496582150) Drew DeVault raises some good points in his blog post [Rust is not a good C replacement](https://drewdevault.com/2019/03/25/Rust-is-not-a-good-C-replacement.html).
 He names some attributes that C has and Rust lacks which he thinks are required in a good C replacement.
 So what can we say are some features of a hypothetical good C replacement?
 
