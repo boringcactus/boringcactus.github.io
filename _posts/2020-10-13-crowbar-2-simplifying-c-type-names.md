@@ -2,7 +2,7 @@
 title: "Crowbar: Simplifying C's type names"
 ---
 
-(Previously in Crowbar: [Defining a good C replacement]({% link _posts/2020-09-28-crowbar-1-defining-a-c-replacement.md %}).)
+(Previously in Crowbar: [Defining a good C replacement](/2020/09/28/crowbar-1-defining-a-c-replacement.md).)
 
 I've been working intermittently on drawing up a specification for [Crowbar](https://sr.ht/~boringcactus/crowbar-lang/), a C replacement aiming to be both simpler and safer.
 I'm still nowhere near done, but I'm proud of the concept I've reached for type names, and I want to explain it in depth here.
@@ -21,7 +21,7 @@ Ideally, we can preserve the syntax as is for simple cases, while cutting down o
 
 As of right now, the Crowbar specification gives the syntax as a [parsing expression grammar](https://en.wikipedia.org/wiki/Parsing_expression_grammar), which I'll give an excerpt from here:
 
-```
+```peg
 Type      ← 'const' BasicType /
             BasicType '*' /
             BasicType '[' Expression ']' /
@@ -50,7 +50,7 @@ char *str[10];
 Evidently this means "str is an array 10 of pointers to char".
 How would we express that in Crowbar (as it hypothetically exists so far)?
 
-```
+```crowbar
 (char *)[10] str;
 ```
 
@@ -58,7 +58,7 @@ Now that's more like it.
 We can look at it and tell right away that the array is the outermost piece and so `str` is an array.
 In C, I'm not sure how we'd express a pointer-to-arrays-of-10-chars, but in Crowbar it's also straightforward:
 
-```
+```crowbar
 (char[10])* str;
 ```
 
@@ -72,7 +72,7 @@ char *(*fp)( int, float *);
 which supposedly means "fp is a pointer to a function passing an int and a pointer to float returning a pointer to a char".
 That's not extremely dreadful, merely somewhat off-putting, but let's see how it looks in Crowbar.
 
-```
+```crowbar
 ((char *) function(int, (float *),)* fp;
 ```
 
@@ -93,7 +93,7 @@ That fractal mess is "a function passing an int and a pointer to a function pass
 My eyes glaze over reading that description even more than they do reading the original C.
 Can we make this not look awful?
 
-```
+```crowbar
 ((void function(int,))*) signal(int, ((void function(int,))*),);
 ```
 
@@ -114,7 +114,7 @@ int * const const_pointer; // can never do const_pointer = &x;
 You have to remember which is which.
 And why memorize when you can read?
 
-```
+```crowbar
 (const int)* points_to_const;
 const (int *) const_pointer;
 ```

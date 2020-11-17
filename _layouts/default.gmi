@@ -1,0 +1,5 @@
+{% if page.url != "/" %}=> / (brought to you by boringcactus)
+{% endif %}# {{ page.title }}
+{% if page.date %}## {{ page.date.strftime('%d %b %Y') }}
+{% endif %}
+{{ content }}

@@ -275,7 +275,7 @@ As you may notice, we have to put the number into a string before we can add it 
 This is because all values in Duckscript are strings.
 
 Well, now that we've got all the code to pass in variables and run it, let's write our event handler script:
-```
+```duckscript
 if eq ${event.type} "number"
     echo "number!" ${event.value}
 else
@@ -332,7 +332,7 @@ impl ScriptHost for RhaiScriptHost {
 That's all of it.
 That's the whole damn thing.
 Our script is pretty darn straightforward, too, unsurprisingly:
-```
+```rhai
 fn handle_event(data) {
     if type_of(data) == "i64" {
        print("number! " + data);
@@ -392,7 +392,7 @@ impl ScriptHost for DyonScriptHost {
 ```
 
 Our script is likewise pretty straightforward:
-```
+```dyon
 fn handle_event(data) {
     if typeof(data) == "number" {
        println("number! " + str(data))
@@ -472,7 +472,7 @@ impl ScriptHost for KetosScriptHost {
 ```
 
 Our script itself is... definitely Lisp-y.
-```
+```ketos
 (define (handle-event event)
     (do
         (println "~a ~a" (type-of event) event)
@@ -529,7 +529,7 @@ impl ScriptHost for RuneScriptHost {
 
 Again, we have zero glue required for our `print_fancy` function, which is nice.
 Our script looks pretty decent too:
-```
+```rune
 fn handle_event(event) {
     match event {
         n if n is int => println(`Number! {n}`),
@@ -622,7 +622,7 @@ impl ScriptHost for RuwrenScriptHost {
 ```
 
 And our test script in Wren looks nice:
-```
+```wren
 import "demo" for Demo
 class EventHandler {
     static handleEvent(data) {

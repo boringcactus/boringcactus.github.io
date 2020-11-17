@@ -2,7 +2,7 @@
 title: "Crowbar: Turns out, language development is hard"
 ---
 
-(Previously in Crowbar: [Defining a good C replacement]({% link _posts/2020-09-28-crowbar-1-defining-a-c-replacement.md %}), [Simplifying C's type names]({% link _posts/2020-10-13-crowbar-2-simplifying-c-type-names.md %}))
+(Previously in Crowbar: [Defining a good C replacement](/2020/09/28/crowbar-1-defining-a-c-replacement.md), [Simplifying C's type names](/2020/10/13/crowbar-2-simplifying-c-type-names.md))
 
 Originally, I hadn't decided whether Crowbar should be designed with an eye towards compiling to C or with an eye towards compiling directly.
 Compiling to C massively cuts down the scope of Crowbar as a project, but compiling directly gives me more comprehensive control over what all happens.

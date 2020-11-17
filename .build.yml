@@ -1,0 +1,22 @@
+image: alpine/latest
+packages:
+  - python3-pip
+  - rsync
+sources:
+  - https://git.sr.ht/~boringcactus/boringcactus.com
+  - https://git.sr.ht/~boringcactus/cactus-ssg
+environment:
+  deploy: services@boringcactus.com
+secrets:
+  - b5cb9b2b-1461-4486-95e1-886451674a89
+tasks:
+  - install: |
+      cd cactus-ssg
+      python3 -m pip install -r requirements.txt
+  - build: |
+      cd boringcactus.com
+      python3 ../cactus-ssg/build.py
+  - deploy: |
+      cd boringcactus.com
+      rsync -rP _site/html/ $deploy:/var/www/html/www.boringcactus.com/
+      rsync -rP _site/gmi/ $deploy:/var/gemini/gmi/boringcactus.com/

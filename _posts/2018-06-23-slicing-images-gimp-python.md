@@ -70,7 +70,7 @@ def crop(image, x, width, y, height):
 ```
 
 The next step is to figure out the filename for this specific tile; here we're getting an index back from the offsets and width and height.
-```python 
+```python
     x_idx = x / width + 1
     y_idx = y / width + 1
     filename = pdb.gimp_image_get_filename(image)

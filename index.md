@@ -5,7 +5,7 @@ description: immortal programming goddess
 ---
 
 i am an immortal programming goddess and a trans ≈woman.
-i've been programming for over a decade, and in that time i've worked on [a wide variety of projects]({% link projects.md %}).
+i've been programming for over a decade, and in that time i've worked on [a wide variety of projects](/projects/).
 my pronouns, in descending order of preference, are [ze/hir, it/its, and she/her](https://pronoun.is/ze/hir?or=it&or=she).
 
 i exist in a lot of places:
@@ -17,6 +17,6 @@ i exist in a lot of places:
 
 every once in a very great while i write things here:
 
-{% for post in site.posts %}
-- [{{ post.title }} ({{ post.date | date_to_string }})]({{ post.url }})
+{% for post in posts %}
+- [{{ post.title }} ({{ post.date.strftime('%d %b %Y') }})](/{{ post.url }}.md)
 {% endfor %}

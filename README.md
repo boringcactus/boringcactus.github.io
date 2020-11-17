@@ -1,2 +1,3 @@
-# boringcactus.github.io
-http://boringcactus.com
+<https://www.boringcactus.com>
+
+<gemini://boringcactus.com>

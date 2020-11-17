@@ -1,9 +1,0 @@
-plugins:
-  - jekyll-feed
-title: boringcactus
-description: boringcactus's blog posts
-author: boringcactus (Melody Horn)
-exclude:
-  - Dockerfile
-  - LICENSE
-  - README.md

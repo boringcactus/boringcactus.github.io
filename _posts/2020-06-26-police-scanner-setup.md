@@ -79,7 +79,7 @@ of audio input and output devices. check the number in the input list that goes
 with CABLE Output - for me it's 3. pull up notepad and make a new file. since
 my input was number 3, i'm typing
 
-```
+```bat
 DSDPlus.exe -i3M
 ```
 
@@ -89,7 +89,7 @@ is set to "All Files", and name the file `run.bat`. close dsd+, go to that
 folder, and open that `run.bat` file you just created. it should pull up dsd+
 and if you're lucky it'll print
 
-```
+```text
 audio input device #3 (CABLE Output (VB-Audio Virtual ) initialized
 ```
 
@@ -194,7 +194,7 @@ you'll need to set DSD+ to output to "CABLE-A Input" like how you set it to
 input from "CABLE Output" - Cable A is the fourth output in DSD+, so my run.bat
 now looks like this:
 
-```
+```bat
 DSDPlus.exe -i3M -o4
 ```
 

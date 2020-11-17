@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+    <link href="/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="{{ root }}/" rel="alternate" type="{{ mime }}" />
+    <updated>{{ now }}</updated>
+    <id>/feed.xml</id>
+    <title>boringcactus</title>
+    <subtitle>boringcactus's blog posts</subtitle>
+    <author>
+        <name>boringcactus / Melody Horn</name>
+        <uri>/</uri>
+    </author>
+    {% for post in posts %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="{{ root }}/{{ post.url }}.{{ ext }}" rel="alternate" type="{{ mime }}" title="{{ post.title }}" />
+        <published>{{ post.date }}T00:00:00Z</published>
+        <updated>{{ post.date }}T00:00:00Z</updated>
+        <id>{{ post.url }}</id>
+        <content type="{{ mime }}">{{ post | attr(content_attr) }}</content>
+    </entry>
+    {% endfor %}
+</feed>
